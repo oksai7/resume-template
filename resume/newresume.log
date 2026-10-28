@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.1)  26 OCT 2026 14:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.1)  27 OCT 2026 21:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -318,13 +318,13 @@ Package rerunfilecheck Info: File `newresume.out' has not changed.
 Here is how much of TeX's memory you used:
  10870 strings out of 469006
  172001 string characters out of 5454814
- 629327 words of memory out of 5000000
+ 630327 words of memory out of 5000000
  39449 multiletter control sequences out of 15000+600000
  633648 words of font info for 63 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  75i,11n,79p,328b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/clo/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on newresume.pdf (1 page, 109498 bytes).
+Output written on newresume.pdf (1 page, 109557 bytes).
 PDF statistics:
  78 PDF objects out of 1000 (max. 8388607)
  59 compressed objects within 1 object stream
