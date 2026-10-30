@@ -133,9 +133,10 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Hybrid Counting Sort with a Balanced BST} $|$ \emph{C++}}{Feb. 2026 -- May 2026}
+          {\textbf{Hybrid Counting Sort / Frequency Red-Black Tree} $|$ \emph{C++}}{Feb. 2026 -- May 2026}
           \resumeItemListStart
-            \resumeItem{Designed a sort that counts repeated values in a balanced BST: $O(n \log d)$ time, $O(d)$ space ($d$ = distinct values)}
+            \resumeItem{Co-designed a sort that switches between counting sort and a frequency-counting red-black tree by value range: $O(n)$ time when range $\le 100n$, otherwise $O(n \log k)$ for $k$ distinct values}
+            \resumeItem{Benchmarked 8 input types up to 1.3M elements: 64\% faster and 93\% less memory than red-black tree sort}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Network Attack Lab: DoS \& Packet Replay} $|$ \emph{hping3, nginx, VirtualBox, Linux}}{Jan. 2026 -- Present}

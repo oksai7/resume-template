@@ -1,0 +1,200 @@
+%-------------------------
+% Michael N. Martinez -- Resume
+% Based on Jake Gutierrez's resume template (MIT license)
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\titlespacing*{\section}{0pt}{11pt}{9pt}
+
+% Keep the PDF machine-readable for applicant tracking systems
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Michael N. Martinez} \\ \vspace{1pt}
+    \small Lemoore, CA 93245 $|$
+    +1 (520) 244-6387 $|$
+    \href{mailto:mikeyjr355@gmail.com}{\underline{mikeyjr355@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/michael-n-martinez}{\underline{linkedin.com/in/michael-n-martinez}} $|$
+    Open to Relocation
+\end{center}
+
+%-----------OBJECTIVE-----------
+\section{Objective}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{Creating meaningful impacts in the field of Mechanical Engineering, with interests in mathematics, machine design, robotics, and avionics.}}
+  \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {California State University, Fresno}{Fresno, CA}
+      {B.S. Mechanical Engineering $|$ GPA: 3.11 $|$ Dean's List (2 semesters)}{Expected May 2029}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Thermodynamics (Spring '27), Circuit Analysis (Spring '27), Product Development (Spring '27), Mechanics of Materials, Object Oriented Programming (Spring '27), Advanced Engineering Mathematics, Organic Chemistry}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Lemoore Community College \& Lemoore Middle College High School}{Lemoore, CA}
+      {Dual Enrollment $|$ Golden Diploma $|$ Honors x8}{Aug. 2020 -- May 2024}
+  \resumeSubHeadingListEnd
+
+%-----------WORK & RESEARCH EXPERIENCE-----------
+\section{Work \& Research Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Personal Math Tutor}{Aug. 2023 -- Present}
+      {Freelance}{Lemoore, CA}
+      \resumeItemListStart
+        \resumeItem{Worked with struggling high school students to boost their understanding of various subjects such as biology, history, and math}
+        \resumeItem{Utilized an adaptive teaching method to better cater to each student's individual learning styles}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------ENGINEERING PROJECTS-----------
+\section{Engineering Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Chassis Design for Underwater ROV} $|$ \emph{Fresno State AVI Robotics}}{}
+          \resumeItemListStart
+            \resumeItem{Utilized SolidWorks to aid in the design process of a functional chassis capable of housing crucial electronics and withstanding underwater pressure}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Structures Team Member, NASA Student Launch Initiative} $|$ \emph{Fresno State AIAA}}{Sep. 2026 -- Present}
+          \resumeItemListStart
+            \resumeItem{Conducted technical materials and manufacturing research to develop mold designs used to create the body tube, nose cone, and fin can}
+            \resumeItem{Performed a body tube layup using a male mandrel, epoxy, fabric, and heat shrink tape to create the body tube for the subscale rocket}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Micromouse Project Manager} $|$ \emph{IEEE Fresno State Student Branch \& Fresno State AVI Robotics}}{}
+          \resumeItemListStart
+            \resumeItem{Created an organizational outline for team operations and successfully revived the Fresno State Micromouse Competition Team}
+            \resumeItem{Collaborated with AVI Robotics and IEEE student branches to coordinate local Micromouse competitions}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------LEADERSHIP & INVOLVEMENT-----------
+\section{Leadership \& Involvement}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Treasurer}{May 2026 -- Present}
+      {SHPE Fresno State Student Branch}{Fresno, CA}
+      \resumeItemListStart
+        \resumeItem{Created the organization's first working finance spreadsheet to easily keep track of incoming funds as well as expenses}
+        \resumeItem{Collaborated with other SHPE board members to develop a budget that supports travel expenses, future event planning, and materials for technical workshops}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Event Coordinator}{Jan. 2026 -- Present}
+      {IEEE Fresno State Student Branch}{Fresno, CA}
+      \resumeItemListStart
+        \resumeItem{Orchestrated technical workshops on PCB Design, Soldering, and Python, providing direct engineering training for 50+ students}
+        \resumeItem{Facilitated industry tech talks, connecting students with professionals to bridge the gap between academic theory and real-world engineering applications}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++ (Spring '27), MATLAB, Python} \\
+     \textbf{Software}{: Microsoft Excel, Microsoft Word, SolidWorks, AutoCAD, OpenRocket, Visual Studio Code}
+    }}
+ \end{itemize}
+
+%-----------REFERENCES-----------
+\section{References}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Hernan R. Maldonado}{559-278-5408 $|$ \href{mailto:maldonado.hernan74@gmail.com}{\underline{maldonado.hernan74@gmail.com}}}
+      {Director of Student Services, Lyles College of Engineering}{California State University, Fresno}
+
+    \resumeSubheading
+      {Alejandro Zepeda}{805-863-6876}
+      {College Software -- Lockheed Martin}{\href{mailto:Alejandro.d.zepeda@lmco.com}{\underline{Alejandro.d.zepeda@lmco.com}}}
+
+    \resumeSubheading
+      {Mark Borup}{520-481-0406}
+      {RTX -- Raytheon}{}
+
+    \resumeSubheading
+      {Clarissa Morgan}{559-423-3978 $|$ \href{mailto:clarissa.morgan@intel.com}{\underline{clarissa.morgan@intel.com}}}
+      {California State University, Fresno $|$ Prev. at Intel}{\href{mailto:chloesmorgan14@gmail.com}{\underline{chloesmorgan14@gmail.com}}}
+
+  \resumeSubHeadingListEnd
+
+\end{document}
