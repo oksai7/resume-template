@@ -1,0 +1,193 @@
+%-------------------------
+% Clarissa (Chloe) Morgan -- Resume (SHPE 2026 version)
+% Based on Jake Gutierrez's resume template (MIT license)
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\titlespacing*{\section}{0pt}{11pt}{9pt}
+
+% Keep the PDF machine-readable for applicant tracking systems
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Clarissa Morgan} \\ \vspace{1pt}
+    \small 559-423-3978 $|$
+    \href{mailto:chloesmorgan14@gmail.com}{\underline{chloesmorgan14@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/clarissa-morgan}{\underline{linkedin.com/in/clarissa-morgan}} $|$
+    U.S. Citizen $|$ Open to Relocation
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {California State University, Fresno}{Fresno, CA}
+      {B.S. Computer Engineering $|$ GPA: 3.7 $|$ President's List (2 semesters)}{Aug. 2024 -- Expected Dec. 2027}
+    \resumeSubheading
+      {Lemoore College \& Lemoore Middle College High School}{Lemoore, CA}
+      {Earned concurrently: A.A. Mathematics \& Science, A.A. Arts \& Humanities, H.S. Diploma}{Aug. 2020 -- May 2024}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Computer Engineering Intern}{May 2026 -- Aug. 2026}
+      {Intel Corporation}{Hillsboro, OR}
+      \resumeItemListStart
+        \resumeItem{Built an AI analytics system (Python, SQL, Polars) that analyzes fab data through Intel's internal LLM gateway, generating risk analysis, predictions, and insights; cut an estimated 75\% of manual analysis work}
+        \resumeItem{Made it work with any database and split large datasets (1,000+ columns, 10,000+ rows) into chunks the model processes reliably, keeping all data inside Intel's network (OAuth2, SSL verification)}
+        \resumeItem{Built a tool-inventory dashboard (Power BI, TOAD Data Point, Docker) saving its team $\sim$7 hrs/week, and a parallelized utility that resolves FQDNs and pings fab hosts in batches, saving $\sim$2 hrs/week}
+        \resumeItem{Prototyped RAG and MCP integrations with internal AI tools; documented the RAG setup for other employees}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Automotive Ethernet Research Assistant}{Jan. 2026 -- Present}
+      {California State University, Fresno}{Fresno, CA}
+      \resumeItemListStart
+        \resumeItem{Characterize voltage profiles of automotive Ethernet networks and develop cybersecurity measures for them}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {AI \& Robotics Research Assistant}{May 2025 -- July 2025}
+      {California State University, Fresno}{Fresno, CA}
+      \resumeItemListStart
+        \resumeItem{Upgraded a 6-DoF strawberry-harvesting arm's vision (Python, NVIDIA Jetson AGX Orin) from 2D color detection to 3D detection that measures each strawberry's distance so inverse kinematics can guide the arm}
+        \resumeItem{Discovered the arm's camera stream stayed accessible while powered off; documented the vulnerability}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Hybrid Counting Sort / Frequency Red-Black Tree} $|$ \emph{C++}}{Feb. 2026 -- May 2026}
+          \resumeItemListStart
+            \resumeItem{Co-designed a sort that switches between counting sort and a frequency-counting red-black tree by value range: $O(n)$ time when range $\le 100n$, otherwise $O(n \log k)$ for $k$ distinct values}
+            \resumeItem{Benchmarked 8 input types up to 1.3M elements: 64\% faster and 93\% less memory than red-black tree sort}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Network Attack Lab: DoS \& Packet Replay} $|$ \emph{hping3, nginx, VirtualBox, Linux}}{Jan. 2026 -- Present}
+          \resumeItemListStart
+            \resumeItem{Ran and analyzed packet-replay and DoS port-flooding attacks on a Minecraft server in an isolated VM lab}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{AES-128 Core with Hardware Trojan} $|$ \emph{Verilog, FPGA}}{Fall 2026}
+          \resumeItemListStart
+            \resumeItem{Co-designed a synthesizable AES-128 core in Verilog; verified encryption output against NIST test vectors}
+            \resumeItem{Inserted a hardware trojan that corrupts output only on a hidden trigger; verified in simulation and on FPGA}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Nios V (RISC-V) Embedded System} $|$ \emph{C, Quartus Prime Pro, Platform Designer}}{Course Project}
+          \resumeItemListStart
+            \resumeItem{Built a Nios V system with peripherals; programmed board I/O in C using timers and interrupts}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------LEADERSHIP & TEACHING-----------
+\section{Leadership \& Teaching}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Chair (President)}{Jan. 2025 -- Present}
+      {IEEE Fresno State Student Branch}{Fresno, CA}
+      \resumeItemListStart
+        \resumeItem{Grew events from $\sim$5 to 30+ per semester, including PCB, soldering, and Python workshops for 50+ students}
+        \resumeItem{Re-established ties with our IEEE section and area, then secured \$6,000 to send 11 members to IEEE Rising Stars}
+        \resumeItem{Brought Fresno State into the IEEE Elevate pilot, funding senior capstone work at an under-resourced campus, and revived the Micromouse robot competition in partnership with the Robotics Club}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Founder \& President} $|$ \emph{Lemoore Middle College High School Peer Tutoring Program}}{Apr. 2021 -- May 2024}
+      \resumeItemListStart
+        \resumeItem{Founded a peer tutoring program and led a team of 4 tutors in delivering 500+ hours of academic support}
+        \resumeItem{Raised tutored students' grades by 1--2 letter grades on average, helping at-risk students recover from failing}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, C++, Python, SQL (PostgreSQL), Verilog, ARM Assembly, MATLAB, PowerShell} \\
+     \textbf{Hardware}{: Nios V (RISC-V), FPGAs (DE1-SoC, DE25), Jetson, Raspberry Pi, Vivado, ModelSim, oscilloscopes} \\
+     \textbf{Security}{: Threat modeling (STRIDE, DREAD), OWASP IoT, Linux hardening} \\
+     \textbf{AI \& Data}{: LLM integration, RAG, MCP, Polars, pandas, Power BI (DAX, Power Query), TOAD Data Point, cnvrg.io} \\
+     \textbf{Systems \& Networking}{: Linux, Git, Docker, VirtualBox, Tailscale, SSH, nginx, nmap, hping3, OAuth2}
+    }}
+ \end{itemize}
+
+\end{document}
